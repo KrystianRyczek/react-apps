@@ -8,11 +8,16 @@ export default function Home (){
         <h1>Home page</h1>
         <ul>
             <li>
-            <Link to="/SimpleApps"> <span>SimpleApp</span> </Link>
+            <Link to="/SimpleApps"> <span>Simple App</span> </Link>
             </li>
             <li>
-            <Link to="/TicTacToeGame"> <span>TicTacToeGame</span> </Link>
+            <Link to="/TicTacToeGame"> <span>Tic Tac Toe Game</span> </Link>
             </li>
+            <li>
+            <Link to="/InvestmentCalculator"> <span>Investment Calculator</span> </Link>
+            </li>
+
+
         </ul>
 
         

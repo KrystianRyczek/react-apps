@@ -11,7 +11,7 @@ const HomePage = lazy(() => import('./components/HomePage'));
 const NotFoundPage = lazy(() => import('./components/NotFoundPage'));
 const SimpleApps = lazy(() => import('./simple-apps/SimpleApps'));
 const TicTacToeGame = lazy(() => import('./tic-tac-toe-game/TicTacToeGame'));
-
+const InvestmentCalculator = lazy(()=> import('./investment-calculator/InvestmentCalculator') )
 
 
 
@@ -26,6 +26,7 @@ function App() {
           <Route path="/" element={<HomePage/>}/>
           <Route path="SimpleApps" element={<SimpleApps/>}/>
           <Route path="TicTacToeGame" element={<TicTacToeGame/>}/>
+          <Route path="InvestmentCalculator" element={<InvestmentCalculator/>}/>
           <Route path="*" element={<NotFoundPage/>} />
         </Routes>
       </Suspense>

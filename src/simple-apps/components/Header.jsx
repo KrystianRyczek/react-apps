@@ -7,13 +7,13 @@ export default function Header(){
     const description = content;
 
     return(
-        <header>
+        <header id="header-sa">
         <Link to="/">
-        <h2>Back To HomePage</h2>
+        <button>Back To HomePage</button>
         </Link>
-        <img src={reactImg} alt="Stylized atom" />
-        <h1>React Essentials</h1>
-        <p>
+        <img  src={reactImg} alt="Stylized atom" />
+        <h1 >React Essentials</h1>
+        <p >
             {description} React concepts you will need for almost any app you are
             going to build!
         </p>

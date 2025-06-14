@@ -16,7 +16,9 @@ export default function Home (){
             <li>
             <Link to="/InvestmentCalculator"> <span>Investment Calculator</span> </Link>
             </li>
-
+            <li>
+            <Link to="/TheAlmostFinalCountdown"> <span>The Almost Final Countdown</span> </Link>
+            </li>
 
         </ul>
 

@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function Header(){
     return(
-        <header id="header-I-C">
-            <Link to="/">
-                <h2>Back To HomePage</h2>
+        <header id="header-ic">
+            <Link id="header-link" to="/">
+                <button>Back To HomePage</button>
             </Link>
-            <img id="header-img" src={logoGame} alt="Logo Tic-Tac-Toe Game"/>
-            <h1 id="header-h1">React Investment Calculator</h1>
+            <img  src={logoGame} alt="Logo Tic-Tac-Toe Game"/>
+            <h1 >React Investment Calculator</h1>
         </header>
     )
 }

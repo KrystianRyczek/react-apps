@@ -15,22 +15,33 @@
   color: #e1eeeb;
 }
 
-#header-I-C {
-  text-align: center;
+#header-ic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0rem auto;
-  padding: 1rem 0;
+  padding: 2rem 0;
+}
+#header-ic a {
+  width:100%;
+  height: 1rem;
+  margin: 0;
+  text-align: left;
+  padding-left: 2rem;
 }
 
+#header-ic img {
 
-#header-I-C img {
   width: 5rem;
   height: 5rem;
   object-fit: contain;
   background-color: transparent;
 }
 
-#header-I-C h1 {
+#header-ic h1 {
+  text-align: center;
   font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #user-input {

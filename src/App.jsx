@@ -7,12 +7,12 @@ import { lazy, Suspense } from 'react';
 import './App.css'
 
 
-const HomePage = lazy(() => import('./components/HomePage'));
-const NotFoundPage = lazy(() => import('./components/NotFoundPage'));
-const SimpleApps = lazy(() => import('./simple-apps/SimpleApps'));
-const TicTacToeGame = lazy(() => import('./tic-tac-toe-game/TicTacToeGame'));
-const InvestmentCalculator = lazy(()=> import('./investment-calculator/InvestmentCalculator') )
-
+const HomePage = lazy(() => import('./components/HomePage.jsx'));
+const NotFoundPage = lazy(() => import('./components/NotFoundPage.jsx'));
+const SimpleApps = lazy(() => import('./simple-apps/SimpleApps.jsx'));
+const TicTacToeGame = lazy(() => import('./tic-tac-toe-game/TicTacToeGame.jsx'));
+const InvestmentCalculator = lazy(()=> import('./investment-calculator/InvestmentCalculator.jsx') )
+const TheAlmostFinalCountdown = lazy(()=> import('./the-almost-final-countdown/TheAlmostFinalCountdown.jsx'))
 
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
           <Route path="SimpleApps" element={<SimpleApps/>}/>
           <Route path="TicTacToeGame" element={<TicTacToeGame/>}/>
           <Route path="InvestmentCalculator" element={<InvestmentCalculator/>}/>
+          <Route path="TheAlmostFinalCountdown" element={<TheAlmostFinalCountdown/>}/>
           <Route path="*" element={<NotFoundPage/>} />
         </Routes>
       </Suspense>

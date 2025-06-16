@@ -19,14 +19,12 @@ export default function Home (){
             <li>
             <Link to="/TheAlmostFinalCountdown"> <span>The Almost Final Countdown</span> </Link>
             </li>
+            <li>
+            <Link to="/ElegantContext"> <span>Elegant Context</span> </Link>
+            </li>
+
 
         </ul>
-
-        
-        
-        
-        
-        
         </>
 
     )

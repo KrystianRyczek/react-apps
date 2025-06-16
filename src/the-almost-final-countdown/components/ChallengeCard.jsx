@@ -5,7 +5,7 @@ import ResultModal from "./ModalResult"
 export default function ChallengeCard({title, targetTime}){
    const interval = useRef()
    const modalRef = useRef()
-  
+
    const [remainingTime, setRemainingTime] = useState(targetTime*1000)
 
    const timerIsActive = remainingTime < targetTime*1000
@@ -15,13 +15,11 @@ export default function ChallengeCard({title, targetTime}){
     clearInterval(interval.current)
     modalRef.current.open()
    }
-
    const activeTimer = ()=>{
     interval.current = setInterval(()=>{
         setRemainingTime((prevRemainingTime)=>prevRemainingTime-10)
         },10)
    }
-
    const inactiveTimer = ()=>{
     modalRef.current.open()
     clearInterval(interval.current)
@@ -29,10 +27,9 @@ export default function ChallengeCard({title, targetTime}){
     
     const resetTimer=()=>{
         setRemainingTime(targetTime*1000)
+ 
     }
-
-
-    return(
+     return(
         <>
         <ResultModal ref={modalRef} targetTime={targetTime} remainingTime={remainingTime} timeExpired={timeExpired} resetTimer={resetTimer}/>
         <section className="challenge">

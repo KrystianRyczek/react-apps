@@ -2,6 +2,8 @@ import { useImperativeHandle, useRef } from "react"
 import { createPortal } from "react-dom";
 export default function ResultModal({ref, targetTime, remainingTime, timeExpired, resetTimer}){
 // forwardRef for older react version
+
+
 const dialog = useRef()
 useImperativeHandle(ref,()=>{
 return{
@@ -9,6 +11,7 @@ return{
         dialog.current.showModal()
     }
 }});
+
 const scroe = ((1-(remainingTime/(targetTime*1000)))*100).toFixed(0)
 
     return createPortal(

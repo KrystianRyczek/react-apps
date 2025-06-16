@@ -1,9 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-
-
-
-
 import './App.css'
 
 
@@ -13,6 +9,7 @@ const SimpleApps = lazy(() => import('./simple-apps/SimpleApps.jsx'));
 const TicTacToeGame = lazy(() => import('./tic-tac-toe-game/TicTacToeGame.jsx'));
 const InvestmentCalculator = lazy(()=> import('./investment-calculator/InvestmentCalculator.jsx') )
 const TheAlmostFinalCountdown = lazy(()=> import('./the-almost-final-countdown/TheAlmostFinalCountdown.jsx'))
+const ElegantContext =lazy(()=>import('./elegant-context/ElegantContext.jsx'))
 
 
 function App() {
@@ -28,6 +25,7 @@ function App() {
           <Route path="TicTacToeGame" element={<TicTacToeGame/>}/>
           <Route path="InvestmentCalculator" element={<InvestmentCalculator/>}/>
           <Route path="TheAlmostFinalCountdown" element={<TheAlmostFinalCountdown/>}/>
+          <Route path="ElegantContext" element={<ElegantContext/>}/>
           <Route path="*" element={<NotFoundPage/>} />
         </Routes>
       </Suspense>

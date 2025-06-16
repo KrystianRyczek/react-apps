@@ -22,7 +22,9 @@ export default function Home (){
             <li>
             <Link to="/ElegantContext"> <span>Elegant Context</span> </Link>
             </li>
-
+            <li>
+            <Link to="/Placepicker"> <span>Placepicker</span> </Link>
+            </li>
 
         </ul>
         </>

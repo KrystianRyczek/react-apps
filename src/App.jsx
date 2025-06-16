@@ -10,7 +10,7 @@ const TicTacToeGame = lazy(() => import('./tic-tac-toe-game/TicTacToeGame.jsx'))
 const InvestmentCalculator = lazy(()=> import('./investment-calculator/InvestmentCalculator.jsx') )
 const TheAlmostFinalCountdown = lazy(()=> import('./the-almost-final-countdown/TheAlmostFinalCountdown.jsx'))
 const ElegantContext =lazy(()=>import('./elegant-context/ElegantContext.jsx'))
-
+const Placepicker = lazy(()=>import('./palcepicker/Placepicker.jsx'))
 
 function App() {
 
@@ -26,6 +26,7 @@ function App() {
           <Route path="InvestmentCalculator" element={<InvestmentCalculator/>}/>
           <Route path="TheAlmostFinalCountdown" element={<TheAlmostFinalCountdown/>}/>
           <Route path="ElegantContext" element={<ElegantContext/>}/>
+          <Route path="Placepicker" element={<Placepicker/>}/>
           <Route path="*" element={<NotFoundPage/>} />
         </Routes>
       </Suspense>

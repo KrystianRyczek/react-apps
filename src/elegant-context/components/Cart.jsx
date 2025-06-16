@@ -1,4 +1,4 @@
-import { useContext, use } from "react";
+import { useContext } from "react";
 import { ShopContext } from "../store/shoping-store-context";
 
 

@@ -14,7 +14,6 @@ const initPlaces = JSON.parse(localStorage.getItem('selectedPlaces'))||[]
 
 export default function SimpleApss() {
     console.log('APP COMPONENT EXECUTING');
-    const modal = useRef();
     const selectedPlace = useRef();
     const [modalIsOpen, setModalIsOpen]=useState(false)
     const [pickedPlaces, setPickedPlaces] = useState(initPlaces);

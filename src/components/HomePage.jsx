@@ -25,7 +25,9 @@ export default function Home (){
             <li>
             <Link to="/Placepicker"> <span>Placepicker</span> </Link>
             </li>
-
+            <li>
+            <Link to="/ToDoApp"> <span>To Do App</span> </Link>
+            </li>
         </ul>
         </>
 

@@ -6,6 +6,7 @@ import {shopStateReducer, initialState} from "./shopping-store-reducers";
 export default function ShopContextProvider({children}){
 
   const[shopState, shopStateDispach]=useReducer(shopStateReducer, initialState)
+  
   function handleAddItemToCart(id) {
     shopStateDispach({
       type:'ADD_ITEM',

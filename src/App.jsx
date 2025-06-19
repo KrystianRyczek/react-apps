@@ -11,6 +11,7 @@ const InvestmentCalculator = lazy(()=> import('./investment-calculator/Investmen
 const TheAlmostFinalCountdown = lazy(()=> import('./the-almost-final-countdown/TheAlmostFinalCountdown.jsx'))
 const ElegantContext =lazy(()=>import('./elegant-context/ElegantContext.jsx'))
 const Placepicker = lazy(()=>import('./palcepicker/Placepicker.jsx'))
+const ToDoApp = lazy(()=>import('./to-do-app/ToDoApp.jsx'))
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="TheAlmostFinalCountdown" element={<TheAlmostFinalCountdown/>}/>
           <Route path="ElegantContext" element={<ElegantContext/>}/>
           <Route path="Placepicker" element={<Placepicker/>}/>
+          <Route path="ToDoApp" element={<ToDoApp/>}/>
           <Route path="*" element={<NotFoundPage/>} />
         </Routes>
       </Suspense>

@@ -1,0 +1,49 @@
+.msg-modal {
+    justify-self: center;
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  
+  .msg-modal[open] {
+    animation: msg-modal-slide-in-from-top 0.35s ease-out;
+  }
+  
+  .msg-modal::backdrop {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  .msg-modal h2 {
+    margin: 0 0 0.25rem 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  
+  .msg-modal p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+    
+  .msg-modal form {
+    text-align: right;
+  }
+  
+  .msg-modal button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  @keyframes msg-modal-slide-in-from-top {
+    0% {
+      transform: translateY(-15%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 #header-p a {

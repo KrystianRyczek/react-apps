@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-import './App.css'
+import './App.css';
 
 
 const HomePage = lazy(() => import('./components/HomePage.jsx'));
 const NotFoundPage = lazy(() => import('./components/NotFoundPage.jsx'));
 const SimpleApps = lazy(() => import('./simple-apps/SimpleApps.jsx'));
 const TicTacToeGame = lazy(() => import('./tic-tac-toe-game/TicTacToeGame.jsx'));
-const InvestmentCalculator = lazy(()=> import('./investment-calculator/InvestmentCalculator.jsx') )
-const TheAlmostFinalCountdown = lazy(()=> import('./the-almost-final-countdown/TheAlmostFinalCountdown.jsx'))
-const ElegantContext =lazy(()=>import('./elegant-context/ElegantContext.jsx'))
-const Placepicker = lazy(()=>import('./palcepicker/Placepicker.jsx'))
-const ToDoApp = lazy(()=>import('./to-do-app/ToDoApp.jsx'))
+const InvestmentCalculator = lazy(()=> import('./investment-calculator/InvestmentCalculator.jsx'));
+const TheAlmostFinalCountdown = lazy(()=> import('./the-almost-final-countdown/TheAlmostFinalCountdown.jsx'));
+const ElegantContext =lazy(()=>import('./elegant-context/ElegantContext.jsx'));
+const Placepicker = lazy(()=>import('./palcepicker/Placepicker.jsx'));
+const ToDoApp = lazy(()=>import('./to-do-app/ToDoApp.jsx'));
 
 function App() {
 

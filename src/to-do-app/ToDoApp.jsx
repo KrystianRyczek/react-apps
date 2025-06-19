@@ -1,7 +1,7 @@
 import './styles/styles.css';
 import MainSection from './components/MainSection';
 import ProjectsSidebar from './components/ProjectsSidebar';
-import ToDoAppContextProvider from './store/ToDoAppStateControlers'
+import ToDoAppContextProvider from './store/ToDoAppStateControlers';
 
 export default function SimpleApss() {
     console.log('APP COMPONENT EXECUTING');

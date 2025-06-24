@@ -13,7 +13,7 @@ export default function SimpleApss() {
       <main id="main-sa">
       <CoreConcept/>
       <Examples/>
-      </main id="main-sa">
+      </main">
     </div>
     )
 

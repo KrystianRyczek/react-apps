@@ -61,7 +61,7 @@
   
 }
 
-main {
+#main-sa {
   width: 100%;
   max-width: 50rem;
   margin: auto;
@@ -74,7 +74,7 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-main h2 {
+#main-sa h2 {
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   margin: 0 0 1.5rem 0;

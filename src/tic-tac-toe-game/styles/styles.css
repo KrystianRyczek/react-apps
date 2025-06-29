@@ -188,6 +188,7 @@ ol {
 }
 
 #game-board button {
+  display: flex;
   width: 8rem;
   height: 8rem;
   border: none;
@@ -197,6 +198,8 @@ ol {
   cursor: pointer;
   font-family: 'Caprasimo', cursive;
   padding: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 #game-over {

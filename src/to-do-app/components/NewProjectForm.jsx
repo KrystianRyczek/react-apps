@@ -54,7 +54,7 @@ export default function NewProjectForm(){
     return(
         <div className="w-[35rem] mt-16">
             <MsgModal ref={modalRef} msg={modalMsg}/>
-            <h2 className="text-xl font-bold text-stone-700 my-4">NewProjectForm</h2>
+            <h2 className="text-xl font-bold text-stone-700 my-4">New Project Form</h2>
             <menu className="flex items-center justify-end gap-4 my-4">
                 <li>
                     <button className="text-stone-500 bg-transparent" onClick={closeProjectFormClikcHandler}>Cancel</button>

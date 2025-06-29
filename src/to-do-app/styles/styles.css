@@ -1,5 +1,6 @@
 .msg-modal {
     justify-self: center;
+    align-self: center;
     border: none;
     border-radius: 8px;
     padding: 2rem;

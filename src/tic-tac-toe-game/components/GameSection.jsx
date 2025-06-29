@@ -5,8 +5,13 @@ import Modal from "./Modal";
 import { useState } from 'react';
 import { WINNING_COMBINATIONS } from "../helpers/helpers";
 
+
+
 export default function GameSection(){
     const [gameTurns, setGameTurns]=useState([])
+
+    const [name ,setName] = useState({X: "Player1", O:"Player2"})
+
 
     const initgameState = [
         [null,null,null,],
@@ -41,7 +46,7 @@ export default function GameSection(){
     
         if(setSymbols.size===1&&!setSymbols.has(null)){
             winner = true
-            winnerName = setSymbols.has('X')?'X':'O'
+            winnerName = setSymbols.has('X')?name['X']:name['O']
         }      
     }
 
@@ -59,11 +64,18 @@ export default function GameSection(){
         setGameTurns([])
     }
 
+    const changePlayerNameHandler=(symbol, name)=>{
+        setName((prevState)=>{
+            return{...prevState,[symbol]:name} 
+        })
+
+    }
+
     return(
         <main>
             <div id="game-container">
-                <PlayersSection activePlayer={activePlayer}/>
-                {(winner||draw)&&<Modal winnerName={winnerName} restartSelectHandler={restartSelectHandler}/>}
+                <PlayersSection activePlayer={activePlayer} name={name} changePlayerNameHandler={changePlayerNameHandler}/>
+                {(winner||draw)&&<Modal winnerName={winnerName.toUpperCase()} restartSelectHandler={restartSelectHandler}/>}
                 <GameBoard squerSelectkHandler={squerSelectkHandler}
                            gameBoard={gameBoard}
                            />

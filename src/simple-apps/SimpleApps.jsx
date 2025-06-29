@@ -10,7 +10,7 @@ export default function SimpleApss() {
     return(
     <div id="simple-app">
       <Header/>
-      <main>
+      <main id='main-sa'>
       <CoreConcept/>
       <Examples/>
       </main>

@@ -3,7 +3,7 @@ import MainSection from './components/MainSection';
 import ProjectsSidebar from './components/ProjectsSidebar';
 import ToDoAppContextProvider from './store/ToDoAppStateControlers';
 
-export default function SimpleApss() {
+export default function ToDoApp() {
     console.log('APP COMPONENT EXECUTING');
 
     return(

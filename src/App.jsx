@@ -13,10 +13,10 @@ const ElegantContext =lazy(()=>import('./elegant-context/ElegantContext.jsx'));
 const Placepicker = lazy(()=>import('./palcepicker/Placepicker.jsx'));
 const ToDoApp = lazy(()=>import('./to-do-app/ToDoApp.jsx'));
 const Quiz = lazy(()=>import('./quiz/Quiz.jsx'));
+const FoodOrderApp = lazy(()=>import('./food-order-app/FoodOrderApp.jsx'))
+
 
 function App() {
-
-
   return (
     <>
     <BrowserRouter>
@@ -31,6 +31,7 @@ function App() {
           <Route path="Placepicker" element={<Placepicker/>}/>
           <Route path="ToDoApp" element={<ToDoApp/>}/>
           <Route path='Quiz' element={<Quiz/>}/>
+          <Route path='FoodOrderApp' element = {<FoodOrderApp/>}/>
           <Route path="*" element={<NotFoundPage/>} />
         </Routes>
       </Suspense>

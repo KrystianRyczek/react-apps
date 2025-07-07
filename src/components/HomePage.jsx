@@ -31,6 +31,9 @@ export default function Home (){
             <li>
                 <Link to="/Quiz"> <span>Quiz</span> </Link>
             </li>
+            <li>
+                <Link to="/FoodOrderApp"> <span>Food Order App</span> </Link>
+            </li>
         </ul>
         </>
 

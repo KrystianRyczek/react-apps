@@ -34,6 +34,9 @@ export default function Home (){
             <li>
                 <Link to="/FoodOrderApp"> <span>Food Order App</span> </Link>
             </li>
+            <li>
+                <Link to="/FormAction"> <span>Form Action</span> </Link>
+            </li>
         </ul>
         </>
 

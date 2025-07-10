@@ -16,12 +16,19 @@
 }
 
 #main-header {
+  width: 90%;
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.title-container{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 10%;
 }
-
 #main-header #title {
   display: flex;
   gap: 1rem;
@@ -121,6 +128,8 @@
 }
 
 .modal-actions {
+  justify-self: center;
+  align-self: center;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;

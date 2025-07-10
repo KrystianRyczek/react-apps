@@ -7,11 +7,13 @@ export default function ToDoApp() {
     console.log('APP COMPONENT EXECUTING');
 
     return(
-    <main id="to-do-app" className="w-fit min-h-210 py-8 flex bg-gray-100 mx-auto">
-      <ToDoAppContextProvider>
-        <ProjectsSidebar/>
-        <MainSection/>
-      </ToDoAppContextProvider>
+    <main id="to-do-app" >
+      <div className="w-fit min-h-210 py-8 flex bg-gray-100 mx-auto">
+        <ToDoAppContextProvider>
+          <ProjectsSidebar/>
+          <MainSection/>
+        </ToDoAppContextProvider>
+      </div>
     </main>
     )
 

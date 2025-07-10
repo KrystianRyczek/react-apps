@@ -37,7 +37,6 @@ export default function Checkout({closeBtnClickHandler}){
                                 items:cart,
                                 customer: customerData
                             })
-                
                 // method:'POST',
                 // headers:{
                 //     'Content-Type': 'application/json'
@@ -101,18 +100,14 @@ export default function Checkout({closeBtnClickHandler}){
 
 
     if(submitingState.isError){
-
         return(
             <div className="error-box">
             <div className="error">
                 <h2>Error!</h2>
                 <p>{submitingState.errorMsg?submitingState.errorMsg:'Something went wrong!'}</p>
- 
             </div>
             <button type="button" onClick={closeBtnClickHandler} className='text-button'>close</button>
             </div>
-
-
         )
     }
 
@@ -141,6 +136,5 @@ export default function Checkout({closeBtnClickHandler}){
                     </p>
                 </Form>
             </Formik>
-
     )
 }

@@ -141,6 +141,8 @@ margin-top: 2rem;
 }
 
 #shop-modal {
+  justify-self: center;
+  align-self: center;
   width: 30%;
   background: #d3b17b;
   border: none;
@@ -208,6 +210,7 @@ margin-top: 2rem;
 }
 
 #shop-modal form {
+
   display: flex;
   gap: 1rem;
   justify-content: flex-end;

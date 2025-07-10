@@ -4,7 +4,7 @@ import Cart from './Cart';
 import { useCallback, useContext, useRef, useState } from 'react'
 import { FoodOrderAppContext } from '../store/FoodOrederAppContext'
 import Checkout from './Checkout';
-
+import { Link } from 'react-router-dom';
 
 
 export default function Header(){
@@ -33,17 +33,23 @@ export default function Header(){
 
     return(
             <>
+
                 <header id='main-header'>
-                    <div id='title'>
-                        <img src={logoImg} alt='App logo'/>
-                        <h1>ReactFood</h1>
+                    <Link id="header-link" to="/">
+                            <button>Back To HomePage</button>
+                    </Link>
+                    <div className='title-container'>
+                        <div id='title'>
+                            <img src={logoImg} alt='App logo'/>
+                            <h1>ReactFood</h1>
+                        </div>
+                        <button className='text-button' onClick={cartClickHandler}>
+                            <p>
+                                <span>Card </span>
+                                <span>({mealCount})</span>
+                            </p>
+                        </button>
                     </div>
-                    <button className='text-button' onClick={cartClickHandler}>
-                        <p>
-                            <span>Card </span>
-                            <span>({mealCount})</span>
-                        </p>
-                    </button>
                 </header>
                 <Modal ref={modal} closeBtnClickHandler={closeBtnClickHandler}>
                     {modalContent==='cart'&&<Cart checkoutClickHandler={checkoutClickHandler} closeBtnClickHandler={closeBtnClickHandler}/>}

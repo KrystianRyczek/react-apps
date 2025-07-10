@@ -4,18 +4,18 @@ export default function Signup() {
       <h2>Welcome on board!</h2>
       <p>We just need a little bit of data from you to get you started 🚀</p>
 
-      <div className="control">
+      <div className="control-fa">
         <label htmlFor="email">Email</label>
         <input id="email" type="email" name="email" />
       </div>
 
-      <div className="control-row">
-        <div className="control">
+      <div className="control-fa-row">
+        <div className="control-fa">
           <label htmlFor="password">Password</label>
           <input id="password" type="password" name="password" />
         </div>
 
-        <div className="control">
+        <div className="control-fa">
           <label htmlFor="confirm-password">Confirm Password</label>
           <input
             id="confirm-password"
@@ -27,19 +27,19 @@ export default function Signup() {
 
       <hr />
 
-      <div className="control-row">
-        <div className="control">
+      <div className="control-fa-row">
+        <div className="control-fa">
           <label htmlFor="first-name">First Name</label>
           <input type="text" id="first-name" name="first-name" />
         </div>
 
-        <div className="control">
+        <div className="control-fa">
           <label htmlFor="last-name">Last Name</label>
           <input type="text" id="last-name" name="last-name" />
         </div>
       </div>
 
-      <div className="control">
+      <div className="control-fa">
         <label htmlFor="phone">What best describes your role?</label>
         <select id="role" name="role">
           <option value="student">Student</option>
@@ -52,7 +52,7 @@ export default function Signup() {
 
       <fieldset>
         <legend>How did you find us?</legend>
-        <div className="control">
+        <div className="control-fa">
           <input
             type="checkbox"
             id="google"
@@ -62,7 +62,7 @@ export default function Signup() {
           <label htmlFor="google">Google</label>
         </div>
 
-        <div className="control">
+        <div className="control-fa">
           <input
             type="checkbox"
             id="friend"
@@ -72,13 +72,13 @@ export default function Signup() {
           <label htmlFor="friend">Referred by friend</label>
         </div>
 
-        <div className="control">
+        <div className="control-fa">
           <input type="checkbox" id="other" name="acquisition" value="other" />
           <label htmlFor="other">Other</label>
         </div>
       </fieldset>
 
-      <div className="control">
+      <div className="control-fa">
         <label htmlFor="terms-and-conditions">
           <input type="checkbox" id="terms-and-conditions" name="terms" />I
           agree to the terms and conditions
@@ -86,10 +86,10 @@ export default function Signup() {
       </div>
 
       <p className="form-actions">
-        <button type="reset" className="button button-flat">
+        <button type="reset" className="button-fa button-fa-flat">
           Reset
         </button>
-        <button className="button">Sign up</button>
+        <button className="button-fa">Sign up</button>
       </p>
     </form>
   );

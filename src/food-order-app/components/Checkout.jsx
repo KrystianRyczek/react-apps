@@ -30,7 +30,7 @@ export default function Checkout({closeBtnClickHandler}){
         }
         
         try{
-            const response = await fetch('http://localhost:3000/orders', {
+            const response = await fetch('https://foodorderapp-50719-default-rtdb.europe-west1.firebasedatabase.app/orders', {
                 method:'POST',
                 "use_safe_mode": 1,
                 headers:{

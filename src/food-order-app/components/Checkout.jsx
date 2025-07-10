@@ -25,23 +25,29 @@ export default function Checkout({closeBtnClickHandler}){
             email: values.email, 
             name: values.name, 
             street:values.street, 
-            'postal-code':values.code, 
+            postalcode:values.code, 
             city:values.city
         }
         
         try{
-            const response = await fetch('https://foodorderapp-50719-default-rtdb.europe-west1.firebasedatabase.app/orders', {
-                method:'POST',
-                "use_safe_mode": 1,
-                headers:{
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    order:{
-                        items:cart,
-                        customer: customerData
-                    }
-                })
+            const response = await fetch('https://react-apps-6b050-default-rtdb.europe-west1.firebasedatabase.app/order.json', {
+                
+                    method:'POST',
+                    body: JSON.stringify({
+                                items:cart,
+                                customer: customerData
+                            })
+                
+                // method:'POST',
+                // headers:{
+                //     'Content-Type': 'application/json'
+                // },
+                // body: JSON.stringify({
+                //     order:{
+                //         items:cart,
+                //         customer: customerData
+                //     }
+                // })
             })
             const data = await response.json()
 

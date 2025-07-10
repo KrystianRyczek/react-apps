@@ -19,7 +19,7 @@ export default function MealsSection(){
                 setState((prevState)=>{
                     return {...prevState, isloading:true}
                 })
-                const response= await fetch('https://foodorderapp-50719-default-rtdb.europe-west1.firebasedatabase.app/meals.json')
+                const response= await fetch('https://react-apps-6b050-default-rtdb.europe-west1.firebasedatabase.app/meals.json')
                 const data = await response.json()
 
                 if(!response.ok){

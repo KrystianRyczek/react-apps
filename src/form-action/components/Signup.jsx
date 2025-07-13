@@ -88,7 +88,7 @@ export default function Signup() {
       </div>
 
       <p className="form-actions">
-        <button type="reset" className={styles.buttonfa +' '+ styles.buttonfaflat}>
+        <button type="reset" className={styles.buttonfa + styles.buttonfaflat}>
           Reset
         </button>
         <button className={styles.buttonfa}>Sign up</button>

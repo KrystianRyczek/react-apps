@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.formactioncontainer {
+.formaction-container {
   margin: 0;
   font-family: 'Lato', serif;
   -webkit-font-smoothing: antialiased;
@@ -14,7 +14,7 @@
   min-height: 120vw;
 }
 
-.headerfa {
+.header-fa {
   width: 90%;
   max-width: 40rem;
   margin: 2rem 0;
@@ -23,16 +23,16 @@
   font-family: 'Quicksand', sans-serif;
 
 }
-.headerfa a{
+.header-fa a{
 font-size: 1rem;
   color:#2f4444;
 
 }
-.headerfa div {
+.header-fa div {
   text-align: center;
 }
 
-.headerfa img {
+.header-fa img {
   width: 5rem;
   height: 5rem;
   margin:0 auto;
@@ -42,7 +42,7 @@ font-size: 1rem;
   filter: drop-shadow(0 0 4px rgba(31, 42, 42, 0.5));
 }
 
-.headerfa h1 {
+.header-fa h1 {
   font-weight: 700;
   font-size: 3rem;
   margin: 1rem 0;
@@ -50,7 +50,7 @@ font-size: 1rem;
   color: #2f4444;
 }
 
-.formaction {
+.form-action {
   width: 90%;
   max-width: 40rem;
   margin: 3rem auto;
@@ -60,17 +60,18 @@ font-size: 1rem;
   box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
 }
 
-.controlfa,
-.fieldsetfa {
+.control-fa,
+.fieldset-fa,
+legend {
   margin-bottom: 1rem;
 }
 
-
-.controlfa.no-margin {
-  margin-bottom: 0;
+.fieldset-fa {
+  padding-left: 1rem;
+  border: 1px solid #758a8a;
 }
 
-.controlfa label {
+.control-fa label {
   display: block;
   font-size: 0.8rem;
   margin-bottom: 0.2rem;
@@ -79,7 +80,7 @@ font-size: 1rem;
   font-weight: bold;
 }
 
-.controlfa input {
+.control-fa input {
   display: block;
   width: 100%;
   max-width: 15rem;
@@ -91,7 +92,7 @@ font-size: 1rem;
   color: #142020;
 }
 
-.controlfa select {
+.control-fa select {
   display: block;
   width: 100%;
   max-width: 15rem;
@@ -103,16 +104,16 @@ font-size: 1rem;
   color: #142020;
 }
 
-.controlfa:has(input[type='checkbox']) {
+.control-fa:has(input[type='checkbox']) {
   display: flex;
   align-items: center;
 }
 
-.controlfa:has(input[type='checkbox']) label {
+.control-fa:has(input[type='checkbox']) label {
   margin: 0;
 }
 
-.controlfa input[type='checkbox'] {
+.control-fa input[type='checkbox'] {
   display: inline-block;
   width: auto;
   max-width: none;
@@ -123,31 +124,31 @@ font-size: 1rem;
   color: #d9e2f1;
 }
 
-.controlfaerror {
+.control-fa-error {
   color: #ffca99;
   font-size: 0.8rem;
   height: 2rem;
   padding: 0.5rem 0;
 }
 
-.controlfaerror p {
+.control-fa-error p {
   margin: 0;
 }
 
-.controlfarow {
+.control-fa-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 1rem;
 }
 
-.formactions {
+.form-actions {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
 }
 
-.buttonfa {
+.button-fa {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 4px;
@@ -157,18 +158,18 @@ font-size: 1rem;
   cursor: pointer;
 }
 
-.buttonfa:hover,
-.buttonfa:focus {
+.button-fa:hover,
+.button-fa:focus {
   background-color: #319890;
 }
 
-.buttonfaflat {
+.button-fa-flat {
   background-color: transparent;
   color: #9cbaba;
 }
 
-.buttonfaflat:hover,
-.buttonfaflat:focus {
+.button-fa-flat:hover,
+.button-fa-flat:focus {
   background-color: transparent;
   color: #869999;
 }

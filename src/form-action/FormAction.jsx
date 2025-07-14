@@ -5,7 +5,7 @@ import Signup from './components/Signup'
 export default function FormAction(){
 
     return(
-        <div id='form-action' className={styles.formactioncontainer}>
+        <div id='form-action' className={styles['formaction-container']}>
             <Header />
             <Signup />
         </div>

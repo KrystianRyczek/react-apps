@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header id='header-fa' className={styles.headerfa}>
-      <Link id="header-link" className={styles.headerlink} to="/">
+    <header id='header-fa' className={styles['header-fa']}>
+      <Link id="header-link" className={styles['header-link']} to="/">
         <button>Back To HomePage</button>
       </Link>
       <div>

@@ -15,7 +15,7 @@ const ToDoApp = lazy(()=>import('./to-do-app/ToDoApp.jsx'));
 const Quiz = lazy(()=>import('./quiz/Quiz.jsx'));
 const FoodOrderApp = lazy(()=>import('./food-order-app/FoodOrderApp.jsx'))
 const FormAction = lazy(()=>(import('./form-action/FormAction.jsx')))
-
+const OpinionOptimisticUpdate = lazy(()=>(import('./opinion-optimistic-update/OpinionOptimisticUpdate.jsx')))
 
 function App() {
   return (
@@ -34,6 +34,7 @@ function App() {
           <Route path='Quiz' element={<Quiz/>}/>
           <Route path='FoodOrderApp' element = {<FoodOrderApp/>}/>
           <Route path='FormAction' element={<FormAction/>}/>
+          <Route path='OpinionOptimisticUpdate' element={<OpinionOptimisticUpdate/>}/>          
           <Route path="*" element={<NotFoundPage/>} />
           
         </Routes>

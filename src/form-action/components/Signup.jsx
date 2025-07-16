@@ -34,7 +34,7 @@ export default function Signup() {
     if (!isNotEmpty(name) || !isNotEmpty(lastName)){
       errors.push('Please provide both Your first and last name.')
     }
-    if (!isNotEmpty(role)){
+    if (isEqualToOtherValue(role, 'select')){
       errors.push('Please select a role.')
     }
     if(!terms){
@@ -49,8 +49,12 @@ export default function Signup() {
     }
 
   }
+  
 
   const [formState, formAction ] = useActionState(submitAction, {errors:null})
+
+
+
 
   return (
     <form action={formAction} className={styles['form-action']}>
@@ -96,6 +100,7 @@ export default function Signup() {
       <div className={styles['control-fa']}>
         <label htmlFor="role">What best describes your role?</label>
         <select id="role" name="role" defaultChecked={formState.role}>
+        <option value="select">Select</option>
           <option value="student">Student</option>
           <option value="teacher">Teacher</option>
           <option value="employee">Employee</option>

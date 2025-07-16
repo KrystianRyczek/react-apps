@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Slab:wght@400;700&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 #tic-tac-toe-game {
   height: 100%;
   width: 100%;

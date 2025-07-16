@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 #elegant-context {
   min-height: 100%;
   width: 100%;

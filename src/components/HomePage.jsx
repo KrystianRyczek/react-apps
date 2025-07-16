@@ -37,6 +37,12 @@ export default function Home (){
             <li>
                 <Link to="/FormAction"> <span>Form Action</span> </Link>
             </li>
+            <li>
+                <Link to="/OpinionOptimisticUpdate"> <span>Opinion Optimistic Update</span> </Link>
+            </li>
+
+
+            
         </ul>
         </>
 

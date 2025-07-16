@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Handjet:wght@400;700&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 #the-almost-final-countdown {
   margin: 0 auto;
   font-family: 'Quicksand', sans-serif;

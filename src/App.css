@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+}
+
 #root {
   width: 100vw;
   height: 120vw;
